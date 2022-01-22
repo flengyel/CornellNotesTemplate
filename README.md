@@ -7,7 +7,7 @@ This adaptation is licensed under a  [Creative Commons Attribution-ShareAlike 4.
 
 ## Adaptation
 
-The adaptations to sgmoye's original LaTeX code were as follows. The TiKz command to draw grid lines within the note box portion of the Cornell Notes design was replaced with commands to draw twenty-seven ruled lines within the note box. The step size was set to height of the note box divided by 27. The cue section width and the summary section height were modified accordingly. Page numbers were suppressed and the margins were modified to better fit the page.
+The adaptations to sgmoye's original LaTeX code were as follows. The [TiKz](https://ctan.org/pkg/pgf?lang=en) command to draw grid lines within the note box portion of the Cornell Notes design was replaced with commands to draw twenty-seven ruled lines within the note box. The step size was set to height of the note box divided by 27. The cue section width and the summary section height were modified accordingly. Page numbers were suppressed and the margins were modified to better fit the page.
 
 ## Compilation
 
