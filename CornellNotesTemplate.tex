@@ -1,0 +1,47 @@
+%LaTeX code and SVG for a Cornell Notes [Stylus Labs Write template](https://github.com/styluslabs/templates).
+
+%Adapted by Florian Lengyel from LaTeX code posted at https://tex.stackexchange.com/questions/70570/cornell-notes-a-lyx-or-latex-solution-needed/145779#145779 by user sgmoye https://tex.stackexchange.com/users/11131/sgmoye under a [CC BY-SA 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/legalcode). For the original licensing statement, see the [Timeline for Cornell Notes - A lyx or latex solution needed Current License: CC BY-SA 3.0](https://tex.stackexchange.com/posts/145779/timeline). 
+
+%This adaptation is licensed under a  [Creative Commons Attribution-ShareAlike 4.0 International Public License](https://creativecommons.org/licenses/by-sa/4.0/legalcode) in addition to the original [CC BY-SA 3.0 license](https://creativecommons.org/licenses/by-sa/3.0/legalcode) by Florian Lengyel.
+
+\documentclass{article} 
+\usepackage{calc} 
+\usepackage[top=0.75in,bottom=0.25in,left=0.5in,right=0.5in]{geometry} 
+\usepackage{tikz} 
+\usetikzlibrary{calc}
+
+\newlength{\wholeboxwd}
+    \setlength{\wholeboxwd}{.99\textwidth}
+\newlength{\wholeboxht}
+    \setlength{\wholeboxht}{0.95\textheight}
+% step = cgridht / 27
+\newlength{\cuewd}    \setlength{\cuewd}{0.309\wholeboxwd}
+\newlength{\summht}   \setlength{\summht}{0.206\wholeboxht}
+\newlength{\cgridht}  \setlength{\cgridht}{\wholeboxht-\summht}
+\newlength{\cgridwd}  \setlength{\cgridwd}{\wholeboxwd-\cuewd}
+\newlength{\mystep} \setlength{\mystep}{ \cgridht / 27}
+\newlength{\xorig}
+\newlength{\yorig}
+\setlength{\xorig}{0cm}
+\setlength{\yorig}{0cm}
+
+\begin{document} 
+\thispagestyle{empty}
+\begin{center}
+\begin{tikzpicture} 
+
+\foreach \i in {1,2,...,27}{
+\draw[gray!75,thin] ($(\cuewd,\wholeboxht)+(0,-\mystep*\i)$) -- ($(\wholeboxwd,\wholeboxht)+(0,- \mystep*\i)$);
+}
+
+% Draw the horizontal summary section separator
+\draw [line width=.2pt] (\xorig,\summht) -- (\wholeboxwd,\summht);  
+% Draw vertical the cue section separator
+\draw [line width=.2pt] (\cuewd,\summht) -- (\cuewd,\wholeboxht);
+% Draw the bounding box
+\draw (\xorig,\yorig) rectangle (\wholeboxwd,\wholeboxht);
+
+\end{tikzpicture} 
+\end{center}
+
+\end{document}
