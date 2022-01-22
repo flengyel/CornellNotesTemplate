@@ -7,7 +7,7 @@ This adaptation is licensed under a  [Creative Commons Attribution-ShareAlike 4.
 
 ## Adaptation
 
-The adaptations to sgmoye's original LaTeX code were as follows. The command to draw grid lines were replaced with the standard twenty-seven ruled lines. The step size was set grid height divided by 27. The cue section width and the summary section height were modified accordingly. Page numbers were suppressed and the margins were modified.
+The adaptations to sgmoye's original LaTeX code were as follows. The command to draw grid lines were replaced with a command to draw the standard twenty-seven ruled lines within the note box portion of the Cornell Notes design. The step size was set to size of the note box height divided by 27. The cue section width and the summary section height were modified accordingly. Page numbers were suppressed and the margins were modified.
 
 ## Compilation
 
