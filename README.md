@@ -17,7 +17,7 @@ The LaTeX file ```CornellNotesTemplate.tex``` was compiled with ```MiKTeX``` to 
 
 ## Usage
 
-The file ```CornellNotes.svg``` when opened in [Stylus Labs Write](https://github.com/styluslabs) will open a "Foreign document" dialog informing the user that "[t]his file does not appear to be a Write document. Saving with Write could result in data loss - you will be prompted to save a copy." Select "Use as background" and then save the file under a new filename -- don't overwrite ```CornellNotes.svg```! See [Stylus Labs Write template](https://github.com/styluslabs/templates) for further details.
+Opening ```CornellNotes.svg``` in [Stylus Labs Write](https://github.com/styluslabs) will trigger a "Foreign document" dialog informing the user that "[t]his file does not appear to be a Write document. Saving with Write could result in data loss - you will be prompted to save a copy." Select "Use as background" and then save the file under a new filename -- don't overwrite ```CornellNotes.svg```! See [Stylus Labs Write template](https://github.com/styluslabs/templates) for further details.
 
 ## License 
 
